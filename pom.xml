@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>imagemin-svgo</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.1.0-1-SNAPSHOT</version>
     <name>imagemin-svgo</name>
     <description>WebJar for imagemin-optipng</description>
     <url>http://webjars.org</url>
@@ -46,6 +46,19 @@
         <extractDir>${project.build.directory}/imagemin-svgo-${upstreamVersion}</extractDir>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>is-svg</artifactId>
+            <version>0.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>svgo</artifactId>
+            <version>0.3.7-1</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
